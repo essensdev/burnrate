@@ -1,0 +1,36 @@
+---
+import Card from "./Card.astro";
+const posts = await Astro.glob("../posts/*.md");
+---
+
+<section class="grid md:grid-cols-3">
+  {
+    posts.map((post) => (
+      <Card>
+        <img class="border-b" alt="" src={post.frontmatter.image} />
+        <div class="p-5">
+          <h3 class="text-xl">{post.frontmatter.title}</h3>
+          <p class="mt-5">{post.frontmatter.lead}</p>
+          <p class="mt-5 text-gray-700">by {post.frontmatter.author}</p>
+          <a href={`/${post.frontmatter.slug}`}>
+            <button class="border p-2 rounded-none mt-5">Read</button>
+          </a>
+        </div>
+      </Card>
+    ))
+  }
+</section>
+
+<!-- 
+<img class='border-b' src={image} class="card-img-top" alt="">
+        <div class="p-5">
+            <h3 class="text-xl">{title}</h3>
+            <p class="mt-5">{lead}
+            <p class="mt-5">{date}
+            </p>
+            <button
+            class="border p-2 rounded-none mt-5"
+          >
+            Read
+          </button>
+        </div> -->

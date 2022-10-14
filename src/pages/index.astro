@@ -1,18 +1,35 @@
 ---
 import Calculator from "../components/Calculator.jsx";
 import Layout from "../layouts/Layout.astro";
+import Blog from "../components/Blog.astro";
 ---
-<Layout title='BurnRate.io'>
-		<header>
-		<h1 class="text-3xl">BurnRate.io</h1>
-		<h6 class="text-gray-600 mt-3 cursor-pointer">by <a class="underlined" target="_blank"
-			rel="noreferrer noopener" href="https://0xshapeshifter.vercel.app/">ShapeShifter</a></h6>
-		<p class="pt-5">BurnRate is the rate (speed) at which you spend money you earned.</p>
-            <p class="">BurnRate helps you gain an instant bird-eye perspective of your expenses and strategically
-                evaluate your income.</p>
-            <p>If Burn Rate helped you, consider supporting the creator <a class="link-light" target="_blank"
-                    rel="noreferrer noopener" href="https://nowpayments.io/donation/burnrate">here</a>.</p>
-	</header>
-	<Calculator client:load/>
-</Layout>
 
+<Layout title="BurnRate.io">
+  <header>
+    <h1 class="text-3xl">BurnRate.io</h1>
+    <h6 class="text-gray-600 mt-3 cursor-pointer">
+      by <a
+        class="underlined"
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://0xshapeshifter.vercel.app/">ShapeShifter</a>
+    </h6>
+    <p class="pt-5">
+      BurnRate is the rate (speed) at which you spend money you earned.
+    </p>
+    <p class="">
+      BurnRate helps you gain an instant bird-eye perspective of your expenses
+      and strategically evaluate your income.
+    </p>
+    <p>
+      If Burn Rate helped you, consider supporting the creator <a
+        class="link-light"
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://nowpayments.io/donation/burnrate">here</a
+      >.
+    </p>
+  </header>
+  <Calculator client:load />
+  <Blog />
+</Layout>

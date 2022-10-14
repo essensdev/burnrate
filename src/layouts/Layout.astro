@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 const { title = 'BurnRate.io' } = Astro.props;
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -20,6 +21,7 @@ const { title = 'BurnRate.io' } = Astro.props;
 	<main>
 		<slot />
 	</main>
+  <Footer />
 </body>
 </html>
 
