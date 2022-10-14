@@ -1,7 +1,15 @@
 ---
-import '../styles/global.css'
-const { title = 'BurnRate.io' } = Astro.props;
-import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+const {
+  title,
+  desc,
+  ogTitle,
+  ogDesc,
+  ogImage,
+  ogUrl,
+  canonical = "BurnRate.io",
+} = Astro.props;
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -12,18 +20,29 @@ import Footer from '../components/Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>{Astro.props.title}</title>
-</head>
-<body class="m-auto p-10 max-w-7xl justify-center">
-	<main>
-		<slot />
-	</main>
-  <Footer />
-</body>
+    <meta name="description" content={Astro.props.desc} />
+    <meta property="og:title" content={Astro.props.ogTitle} />
+    <meta property="og:description" content={Astro.props.ogDesc} />
+    <meta property="og:image" content={Astro.props.ogImage} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={`https://burnrate.io/${Astro.props.ogUrl}`} />
+    <link
+      rel="canonical"
+      href={`https://burnrate.io/${Astro.props.canonical}`}
+    />
+    <meta property="og:type" content="website"/>
+  </head>
+  <body class="m-auto p-10 max-w-7xl justify-center">
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
-
-
-<!-- m-auto max-w-3xl justify-center text-xl mb-20 -->

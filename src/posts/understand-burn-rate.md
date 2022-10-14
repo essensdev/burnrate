@@ -4,7 +4,9 @@ slug: understand-burn-rate
 lead: A brief intro into strategizing and leveraging personal finance
 author: 0xShapeShifter
 date: 2022-10-14
-image: src/assets/burnrate.svg
+cover: src/assets/burnrate.svg
+ogUrl: understand-burn-rate
+canonial: understand-burn-rate
 ---
 ![Understand BurnEate](src/assets/burnrate.svg)
 ## Cost of Living per month

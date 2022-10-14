@@ -14,17 +14,28 @@ export async function getStaticPaths() {
   }));
 }
 
-const { Content, frontmatter } = Astro.props.post
+const { Content, frontmatter } = Astro.props.post;
 ---
-<Layout title={frontmatter.title}>
-    <h1 class="text-4xl">{frontmatter.title}</h1>
-    <h4 class="text-2xl mt-5 text-gray-600">{frontmatter.lead}</h4>
-    <h4 class="text-xl mt-10">Written by {frontmatter.author}</h4>
-    <h4 class="text-xl ">Published on {new Date(frontmatter.date).toLocaleDateString()}</h4>
-    <a href='/'>
-        <button class="border p-2 rounded-none mt-5">Back</button>
-      </a>
-<article class="markdown">
+
+<Layout
+  title={frontmatter.title}
+  desc={frontmatter.lead}
+  ogTitle={frontmatter.title}
+  ogDesc={frontmatter.lead}
+  ogImage={frontmatter.cover}
+  ogUrl={frontmatter.ogUrl}
+  canonical={frontmatter.canonical}
+>
+  <h1 class="text-4xl">{frontmatter.title}</h1>
+  <h4 class="text-2xl mt-5 text-gray-600">{frontmatter.lead}</h4>
+  <h4 class="text-xl mt-10">Written by {frontmatter.author}</h4>
+  <h4 class="text-xl">
+    Published on {new Date(frontmatter.date).toLocaleDateString()}
+  </h4>
+  <a href="/" rel="noreferrer noopener">
+    <button class="border p-2 rounded-none mt-5">Back</button>
+  </a>
+  <article class="markdown">
     <Content />
-</article>
+  </article>
 </Layout>
