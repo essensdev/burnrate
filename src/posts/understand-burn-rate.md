@@ -3,13 +3,10 @@ title: Understand BurnRate
 slug: understand-burn-rate
 lead: A brief intro into strategizing and leveraging personal finance
 author: 0xShapeShifter
+date: 2022-10-14
 image: src/assets/burnrate.svg
 ---
 ![Understand BurnEate](src/assets/burnrate.svg)
-# Understand BurnRate
-
-### A brief intro into strategizing and leveraging personal finance
-
 ## Cost of Living per month
 
 This is where the sum of your monthly expenses shows up. It is being calculated based on everything that you mentioned in the form on the left in the expenses section.

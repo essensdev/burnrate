@@ -7,3 +7,33 @@ body {
     color: white;
     font-family: 'Space Mono', monospace;
 }
+
+@layer components {
+    .markdown > p {
+        @apply mt-5
+    }
+
+    .markdown > h1 {
+        @apply text-4xl mb-5 mt-10
+    }
+
+    .markdown > h2 {
+        @apply text-3xl mt-20
+    }
+
+    .markdown > h3 {
+        @apply text-2xl mb-7 mt-7
+    }
+
+    .markdown > h4 {
+        @apply text-gray-700 text-xl mb-10
+    }
+
+    .markdown > img {
+        @apply mb-7 mt-7
+    }
+
+    .markdown > blockquote {
+        @apply mb-7 mt-7 border p-5
+    }
+}
