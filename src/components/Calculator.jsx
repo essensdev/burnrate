@@ -82,7 +82,7 @@ export default function Calculator() {
       day.value = computed(() => Math.ceil(month.value / 30));
       hour.value = computed(() => Math.ceil(day.value / 24));
       remain.value = computed(() => income - month.value);
-      time.value = computed(() => Math.ceil(360 - hrsworked));
+      time.value = computed(() => Math.ceil(360 - hours.value));
       savings.value = computed(() => Math.ceil((remain.value / income) * 100));
       burnRate.value = computed(() => Math.ceil(remain.value / day.value));
     });
