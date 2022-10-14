@@ -1,9 +1,17 @@
-import preact from "@astrojs/preact";
 import { h } from "preact";
-import { signal } from "@preact/signals";
+import { signal, batch, computed } from "@preact/signals";
 
 export default function Calculator() {
-  const expenses = signal(0);
+  const income = signal('');
+  const hours = signal('');
+  const rent = signal('');
+  const transport = signal('');
+  const food = signal('');
+  const utilities = signal('');
+  const insurance = signal('');
+  const software = signal('');
+  const entertainment = signal('');
+  const other = signal('');
   const month = signal(0);
   const day = signal(0);
   const hour = signal(0);
@@ -15,63 +23,84 @@ export default function Calculator() {
 
   function calculate(e) {
     e.preventDefault();
-    const income = parseFloat(document.getElementById("income").value);
-    const hrsworked = parseFloat(document.getElementById("hrsworked").value);
-    const rent = parseFloat(document.getElementById("rent").value)
+   batch(() => {
+    income.value = computed(() =>
+    parseFloat(document.getElementById("income").value)
+  );
+  rent.value = computed(() =>
+    parseFloat(document.getElementById("rent").value)
       ? parseFloat(document.getElementById("rent").value)
-      : 0;
-    const transport = parseFloat(document.getElementById("transport").value)
+      : ''
+  );
+  transport.value = computed(() =>
+    parseFloat(document.getElementById("transport").value)
       ? parseFloat(document.getElementById("transport").value)
-      : 0;
-    const food = parseFloat(document.getElementById("food").value)
+      : ''
+  );
+  food.value = computed(() =>
+    parseFloat(document.getElementById("food").value)
       ? parseFloat(document.getElementById("food").value)
-      : 0;
-    const utilities = parseFloat(document.getElementById("utilities").value)
+      : ''
+  );
+  utilities.value = computed(() =>
+    parseFloat(document.getElementById("utilities").value)
       ? parseFloat(document.getElementById("utilities").value)
-      : 0;
-    const insurance = parseFloat(document.getElementById("insurance").value)
+      : ''
+  );
+  insurance.value = computed(() =>
+    parseFloat(document.getElementById("insurance").value)
       ? parseFloat(document.getElementById("insurance").value)
-      : 0;
-    const software = parseFloat(document.getElementById("software").value)
+      : ''
+  );
+  software.value = computed(() =>
+    parseFloat(document.getElementById("software").value)
       ? parseFloat(document.getElementById("software").value)
-      : 0;
-    const entertainment = parseFloat(
-      document.getElementById("entertainment").value
-    )
+      : ''
+  );
+  entertainment.value = computed(() =>
+    parseFloat(document.getElementById("entertainment").value)
       ? parseFloat(document.getElementById("entertainment").value)
-      : 0;
-    const other = parseFloat(document.getElementById("other").value)
+      : ''
+  );
+  other.value = computed(() =>
+    parseFloat(document.getElementById("other").value)
       ? parseFloat(document.getElementById("other").value)
-      : 0;
-    const costMonth =
-      rent +
-      transport +
-      food +
-      utilities +
-      insurance +
-      software +
-      entertainment +
-      other;
-    const costDay = Math.ceil(costMonth / 30);
-    const costHour = Math.ceil(costDay / 24);
-    const cashRemain = income - costMonth;
-    const monSurplus = Math.ceil(360 - hrsworked);
-    const savingsRate = Math.ceil((cashRemain / income) * 100);
-    const burnDays = Math.ceil(cashRemain / costDay);
+      : ''
+  );
+   })
 
-    expenses.value = costMonth;
-    month.value = costMonth;
-    day.value = costDay;
-    hour.value = costHour;
-    remain.value = cashRemain;
-    time.value = monSurplus;
-    savings.value = savingsRate;
-    burnRate.value = burnDays;
-
-    console.log("works");
+    batch(() => {
+      month.value =
+        rent.value +
+        transport.value +
+        food.value +
+        utilities.value +
+        insurance.value +
+        software.value +
+        entertainment.value +
+        other.value;
+      day.value = computed(() => Math.ceil(month.value / 30));
+      hour.value = computed(() => Math.ceil(day.value / 24));
+      remain.value = computed(() => income - month.value);
+      time.value = computed(() => Math.ceil(360 - hrsworked));
+      savings.value = computed(() => Math.ceil((remain.value / income) * 100));
+      burnRate.value = computed(() => Math.ceil(remain.value / day.value));
+    });
   }
- 
 
+  function reset(e) {
+    e.preventDefault();
+    batch(() => {
+      month.value = computed(() => 0)
+      day.value = computed(() => 0)
+      hour.value = computed(() => 0)
+      remain.value = computed(() => 0)
+      time.value = computed(() => 0)
+      savings.value = computed(() => 0)
+      burnRate.value = computed(() => 0)
+
+    });
+  }
 
   return (
     <div class="grid md:grid-cols-2 my-20 gap-20">
@@ -86,6 +115,7 @@ export default function Calculator() {
               type="text"
               id="income"
               name="income"
+              value={income}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="10000"
             />
@@ -102,6 +132,7 @@ export default function Calculator() {
               name="hrsworked"
               type="text"
               id="hrsworked"
+              value={hours}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="120"
             />
@@ -117,6 +148,7 @@ export default function Calculator() {
             <input
               type="text"
               id="rent"
+              value={rent}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Rent"
             />
@@ -124,6 +156,7 @@ export default function Calculator() {
             <input
               type="text"
               id="transport"
+              value={transport}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Transportation"
             />
@@ -131,6 +164,7 @@ export default function Calculator() {
             <input
               type="text"
               id="food"
+              value={food}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Food"
             />
@@ -138,6 +172,7 @@ export default function Calculator() {
             <input
               type="text"
               id="utilities"
+              value={utilities.value}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Utilities"
             />
@@ -145,6 +180,7 @@ export default function Calculator() {
             <input
               type="text"
               id="insurance"
+              value={insurance.value}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Insurance"
             />
@@ -152,12 +188,14 @@ export default function Calculator() {
             <input
               type="text"
               id="software"
+              value={software}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Software"
             />
             <input
               type="text"
               id="entertainment"
+              value={entertainment}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Entertainment"
             />
@@ -165,6 +203,7 @@ export default function Calculator() {
             <input
               type="text"
               id="other"
+              value={other}
               class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
               placeholder="Other"
             />
@@ -197,11 +236,12 @@ export default function Calculator() {
             <h6 class="text-gray-700">per month</h6>
           </div>
           <div>
-            {expenses && (
+       
               <p class="text-end" id="costmonth">
                 ${month}
               </p>
-            )}
+        
+         
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -210,11 +250,11 @@ export default function Calculator() {
             <h6 class="text-gray-700">per day</h6>
           </div>
           <div>
-            {expenses && (
+          
               <p class="text-end" id="costday">
                 ${day}
               </p>
-            )}
+          
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -223,11 +263,11 @@ export default function Calculator() {
             <h6 class="text-gray-700">per hour</h6>
           </div>
           <div>
-            {expenses && (
+           
               <p class="text-end" id="costhour">
                 ${hour}
               </p>
-            )}
+        
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -236,11 +276,11 @@ export default function Calculator() {
             <h6 class="text-gray-700">savings</h6>
           </div>
           <div>
-            {expenses && (
+          
               <p class="text-end" id="cashremain">
                 ${remain}
               </p>
-            )}
+          
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -249,11 +289,11 @@ export default function Calculator() {
             <h6 class="text-gray-700">hours</h6>
           </div>
           <div>
-            {expenses && (
+            
               <p class="text-end" id="monsurplus">
                 {time}
               </p>
-            )}
+         
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -262,11 +302,11 @@ export default function Calculator() {
             <h6 class="text-gray-700">percentage saved</h6>
           </div>
           <div>
-            {expenses && (
+           
               <p class="text-end" id="saveratio">
                 ${savings}
               </p>
-            )}
+          
           </div>
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
@@ -277,11 +317,11 @@ export default function Calculator() {
             </h6>
           </div>
           <div>
-            {expenses && (
+           
               <p class="text-end" id="burnrate">
                 {burnRate}
               </p>
-            )}
+           
           </div>
         </div>
       </div>
