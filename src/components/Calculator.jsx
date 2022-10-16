@@ -116,7 +116,7 @@ export default function Calculator() {
               id="income"
               name="income"
               value={income}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="10000"
             />
           </div>
@@ -133,7 +133,7 @@ export default function Calculator() {
               type="text"
               id="hrsworked"
               value={hours}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="120"
             />
           </div>
@@ -149,7 +149,7 @@ export default function Calculator() {
               type="text"
               id="rent"
               value={rent}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Rent"
             />
 
@@ -157,7 +157,7 @@ export default function Calculator() {
               type="text"
               id="transport"
               value={transport}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Transportation"
             />
 
@@ -165,7 +165,7 @@ export default function Calculator() {
               type="text"
               id="food"
               value={food}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Food"
             />
 
@@ -173,7 +173,7 @@ export default function Calculator() {
               type="text"
               id="utilities"
               value={utilities.value}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Utilities"
             />
 
@@ -181,7 +181,7 @@ export default function Calculator() {
               type="text"
               id="insurance"
               value={insurance.value}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Insurance"
             />
 
@@ -189,14 +189,14 @@ export default function Calculator() {
               type="text"
               id="software"
               value={software}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Software"
             />
             <input
               type="text"
               id="entertainment"
               value={entertainment}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Entertainment"
             />
 
@@ -204,7 +204,7 @@ export default function Calculator() {
               type="text"
               id="other"
               value={other}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white"
+              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
               placeholder="Other"
             />
           </div>
