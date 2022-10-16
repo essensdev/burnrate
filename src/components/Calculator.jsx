@@ -105,7 +105,7 @@ export default function Calculator() {
   return (
     <div class="grid md:grid-cols-2 my-20 gap-20">
       <form id="expenses-form">
-        <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-10">
+        <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Income</h5>
             <h6 class="text-gray-700">monthly</h6>
@@ -116,13 +116,13 @@ export default function Calculator() {
               id="income"
               name="income"
               value={income}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="10000"
             />
           </div>
         </div>
 
-        <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-10">
+        <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Hours</h5>
             <h6 class="text-gray-700">of work, monthly</h6>
@@ -133,13 +133,13 @@ export default function Calculator() {
               type="text"
               id="hrsworked"
               value={hours}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="120"
             />
           </div>
         </div>
 
-        <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-10">
+        <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Expenses</h5>
             <h6 class="text-gray-700">monthly</h6>
@@ -149,7 +149,7 @@ export default function Calculator() {
               type="text"
               id="rent"
               value={rent}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Rent"
             />
 
@@ -157,7 +157,7 @@ export default function Calculator() {
               type="text"
               id="transport"
               value={transport}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Transportation"
             />
 
@@ -165,7 +165,7 @@ export default function Calculator() {
               type="text"
               id="food"
               value={food}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Food"
             />
 
@@ -173,7 +173,7 @@ export default function Calculator() {
               type="text"
               id="utilities"
               value={utilities.value}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Utilities"
             />
 
@@ -181,7 +181,7 @@ export default function Calculator() {
               type="text"
               id="insurance"
               value={insurance.value}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Insurance"
             />
 
@@ -189,14 +189,14 @@ export default function Calculator() {
               type="text"
               id="software"
               value={software}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Software"
             />
             <input
               type="text"
               id="entertainment"
               value={entertainment}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Entertainment"
             />
 
@@ -204,7 +204,7 @@ export default function Calculator() {
               type="text"
               id="other"
               value={other}
-              class="mt-2 form-control bg-transparent border-b rounded-0 text-white block md:w-full"
+              class="mt-4 form-control bg-transparent border-b rounded-0 text-white block w-full"
               placeholder="Other"
             />
           </div>
@@ -237,7 +237,7 @@ export default function Calculator() {
           </div>
           <div>
        
-              <p class="text-end" id="costmonth">
+              <p class="text-end text-xl">
                 ${month}
               </p>
         
@@ -251,7 +251,7 @@ export default function Calculator() {
           </div>
           <div>
           
-              <p class="text-end" id="costday">
+          <p class="text-end text-xl">
                 ${day}
               </p>
           
@@ -264,7 +264,7 @@ export default function Calculator() {
           </div>
           <div>
            
-              <p class="text-end" id="costhour">
+          <p class="text-end text-xl">
                 ${hour}
               </p>
         
@@ -277,7 +277,7 @@ export default function Calculator() {
           </div>
           <div>
           
-              <p class="text-end" id="cashremain">
+          <p class="text-end text-xl">
                 ${remain}
               </p>
           
@@ -290,7 +290,7 @@ export default function Calculator() {
           </div>
           <div>
             
-              <p class="text-end" id="monsurplus">
+          <p class="text-end text-xl">
                 {time}
               </p>
          
@@ -303,7 +303,7 @@ export default function Calculator() {
           </div>
           <div>
            
-              <p class="text-end" id="saveratio">
+          <p class="text-end text-xl">
                 ${savings}
               </p>
           
@@ -318,7 +318,7 @@ export default function Calculator() {
           </div>
           <div>
            
-              <p class="text-end" id="burnrate">
+          <p class="text-end text-xl">
                 {burnRate}
               </p>
            
