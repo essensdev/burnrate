@@ -3,7 +3,7 @@ import Card from "./Card.astro";
 const posts = await Astro.glob("../posts/*.md");
 ---
 
-<section class="grid md:grid-cols-3">
+<section class="grid md:grid-cols-2 gap-20">
   {
     posts.map((post) => (
       <Card>

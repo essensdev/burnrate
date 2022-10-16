@@ -1,14 +1,14 @@
 ---
-title: Understand BurnRate
-slug: understand-burn-rate
-lead: A brief intro into strategizing and leveraging personal finance
+title: Decipher the Results
+slug: decipher-the-results
+lead: How to properly read the results and maximize the outcome to your advantage
 author: 0xShapeShifter
 date: 2022-10-14
-cover: src/assets/burnrate.svg
-ogUrl: understand-burn-rate
-canonial: understand-burn-rate
+cover: src/assets/decipher.svg
+ogUrl: decipher-the-results
+canonial: decipher-the-results
 ---
-![Understand BurnEate](src/assets/burnrate.svg)
+![Understand BurnEate](src/assets/decipher.svg)
 ## Cost of Living per month
 
 This is where the sum of your monthly expenses shows up. It is being calculated based on everything that you mentioned in the form on the left in the expenses section.
@@ -25,6 +25,7 @@ Think of entrepreneurs. When planning, strategizing, and budgeting, they often s
 ## Cash Remaining
 
 In other words, savings. This is the amount of money left from the income - expenses. It’s great to know about it. But it’s more useful to think of ways to leverage it in the first place. That is, money can work and now you have a chance to explore the opportunities.
+![Understand BurnEate](src/assets/example.svg)
 
 ## Time Surplus
 
@@ -38,5 +39,3 @@ Represents the percentage of the income you save monthly. Gives you more context
 
 ## Burn Rate
 The number of days you can live off the money saved.
-
-That’s all for the intro. If you’re interested in learning more, please, consider reading the following materials.

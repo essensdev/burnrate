@@ -26,16 +26,16 @@ const { Content, frontmatter } = Astro.props.post;
   ogUrl={frontmatter.ogUrl}
   canonical={frontmatter.canonical}
 >
-  <h1 class="text-4xl">{frontmatter.title}</h1>
+  <h1 class="text-4xl pt-20">{frontmatter.title}</h1>
   <h4 class="text-2xl mt-5 text-gray-600">{frontmatter.lead}</h4>
   <h4 class="text-xl mt-10">Written by {frontmatter.author}</h4>
   <h4 class="text-xl">
     Published on {new Date(frontmatter.date).toLocaleDateString()}
   </h4>
   <a href="/" rel="noreferrer noopener">
-    <button class="border p-2 rounded-none mt-5">Back</button>
+    <button class="border p-2 rounded-none mt-10">Back</button>
   </a>
-  <article class="markdown">
+  <article class="markdown mt-20">
     <Content />
   </article>
 </Layout>

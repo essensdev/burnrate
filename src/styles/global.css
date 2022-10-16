@@ -10,7 +10,7 @@ body {
 
 @layer components {
     .markdown > p {
-        @apply mt-5
+        @apply mt-5 pb-5
     }
 
     .markdown > h1 {
@@ -30,10 +30,13 @@ body {
     }
 
     .markdown > img {
-        @apply mb-7 mt-7
+        @apply pb-7 mt-7
     }
 
     .markdown > blockquote {
-        @apply mb-7 mt-7 border p-5
+        @apply mb-10 mt-7 border p-10 
     }
+
+  
+
 }
