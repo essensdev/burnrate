@@ -103,9 +103,9 @@ export default function Calculator() {
   }
 
   return (
-    <div class="grid md:grid-cols-2 my-20 gap-20">
+    <div class="grid md:grid-cols-2 gap-20">
       <form id="expenses-form">
-        <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
+        <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Income</h5>
             <h6 class="text-gray-700">monthly</h6>
