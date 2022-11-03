@@ -5,20 +5,29 @@
 body {
     background-color: #111111;
     color: white;
-    font-family: 'Space Mono', monospace;
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Soyuz Grotesk';
+}
+
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url('../assets/SoyuzGroteskBold.woff');
 }
 
 @layer components {
     .markdown > p {
-        @apply mt-5 pb-5
+        @apply mt-5 pb-5 text-[1.3rem]
     }
 
     .markdown > h1 {
-        @apply text-4xl mb-5 mt-10
+        @apply text-6xl mb-5 mt-10
     }
 
     .markdown > h2 {
-        @apply text-3xl mt-20
+        @apply text-4xl mt-20
     }
 
     .markdown > h3 {
@@ -34,7 +43,7 @@ body {
     }
 
     .markdown > blockquote {
-        @apply mb-10 mt-7 border p-10 
+        @apply mb-10 mt-7 border p-10 text-[1.3rem]
     }
 
   
