@@ -298,7 +298,7 @@ export default function Calculator() {
         </div>
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
-            <h5 class="text-xl">Saving Ration:</h5>
+            <h5 class="text-xl">Saving Ratio:</h5>
             <h6 class="text-gray-500">percentage saved</h6>
           </div>
           <div>
