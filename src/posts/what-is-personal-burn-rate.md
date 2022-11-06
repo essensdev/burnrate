@@ -11,20 +11,20 @@ canonial: what-is-personal-burn-rate
 
 ![Understand BurnRate](src/assets/understand.svg)
 
-Personal financial efficiency has been a hot topic for years. People subscribe to dozens of newsletters that are expected to help them become more financially free. Myriads of apps are built with the sole purpose of tracking income vs expenses and (hopefully) changing one's financial routines.
+Personal financial efficiency has been a hot topic for years. People subscribe to dozens of newsletters that are expected to help them become more financially free. Myriads of apps are built with the sole purpose of tracking income vs expenses and (hopefully) changing one's financial routine.
 
-All of these “solutions” have one thing in common – they allow us to get a bird-eye perspective of a person’s financial environment. Although to get this perspective one doesn’t need to download the app or follow dozens of influencers. Consider a burn rate concept to kickstart leveraging your personal finance.
+All of these solutions have one thing in common – they allow us to get a bird-eye perspective of a person’s financial environment. Although to get this perspective one doesn’t need to download the app or follow dozens of influencers. Consider a burn rate concept to kickstart leveraging your personal finance.
 
 > The burn rate is typically used to describe the rate at which a new company is spending its venture capital to finance overhead before generating positive cash flow from operations. It is a measure of negative cash flow. (Will Kenton in [Investopedia](https://www.investopedia.com/terms/b/burnrate.asp#:~:text=It%20is%20a%20measure%20of,spending%20%241%20million%20per%20month))
 
-Burn Rate – is the speed at which a company spends money. It is useful when strategizing, as well as managing black swans. Sounds reasonable, especially when talking about VCs and all those big players in whatever industry.
+Burn Rate – is the speed at which a company spends money. It is useful when strategizing, as well as preparing for the unexpected. Sounds reasonable, especially when talking about VCs and all those big players in whatever industry.
 
 
 ## Personal Burn Rate
 
 So how does one can apply this concept to personal finance? Think of your income first. Say, your monthly income combined is $10,000. Now, let’s calculate all of your expenses. For example, every month you spend $4,000 (rent, transport etc). We’re left with $6,000.
 
-Second, think about how much you spend daily, in other words, what is your daily cost of living? $4,000 / 30 = $133,33. In this case, if something happens, and you loose your source of income, you could live for 45 days with the money you have left ($6,000 / $133.33 = 45). This is your Burn Rate.
+Second, think about how much you spend daily, in other words, what is your daily cost of living? $4,000 / 30 = $133,33. In this case, if something happens, and you loose your source of income, you could live for 45 days with the money you have left ($6,000 / $133.33 = 45). This is your burn rate.
 
 ![Understand BurnRate](src/assets/keepgoing.svg)
 
@@ -32,7 +32,7 @@ Second, think about how much you spend daily, in other words, what is your daily
 
 ## What's Next?
 
-If you’re happy with the result you’ve got, it’s great. If you’re not, probably, it’s time to re-evaluate your approach to finance. There are many options. One could find another job if possible, or start a small company. Maybe it’s time to think of starting a productized service, or some kind of SaaS? Or there’s also an option to lower the cost of living: canceling some forgotten subscriptions, stopping ordering take-out food, and so on.
+If you’re happy with the result you’ve got, that's great. If you’re not, probably, it’s time to re-evaluate your approach to finance. There are many options. One could find another job if possible, or start a small company. Maybe it’s time to think of starting a productized service, or some kind of SaaS? Or there’s also an option to lower the cost of living: canceling some forgotten subscriptions, stopping ordering take-out food, and so on.
 
 > We live in an age of infinite leverage, and the economic rewards for genuine intellectual curiosity have never been higher. (Naval Ravikant's [Twitter](https://twitter.com/naval/status/877321503896854528))
 

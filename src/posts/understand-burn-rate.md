@@ -20,7 +20,7 @@ Represents exactly what it says – the daily cost of living. Calculated based u
 ## Cost of Living per hour
 
 It’s easier to achieve a seemingly smaller goal than a bigger one. In this case, you can compare your current cost of living (daily) and think of how you can tweak it.
-Think of entrepreneurs. When planning, strategizing, and budgeting, they often shift scales from “macro” to “micro”. We could say that we need $5,000 in monthly revenue to be profitable. Which is $7 every hour. The latter seems to be a more achievable goal.
+Think of entrepreneurs. When planning, strategizing, and budgeting, they often shift their perspective from “macro” to “micro”. We could say we need $5,000 in monthly revenue to be profitable. Which is $7 every hour. The latter seems to be a more achievable goal.
 
 ## Cash Remaining
 
