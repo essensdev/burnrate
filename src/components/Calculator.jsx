@@ -103,7 +103,7 @@ export default function Calculator() {
   }
 
   return (
-    <div class="grid md:grid-cols-2 gap-20">
+    <div class="grid md:grid-cols-2 gap-20 my-10">
       <form id="expenses-form">
         <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-5 md:gap-10">
           <div>
