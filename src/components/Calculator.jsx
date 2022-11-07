@@ -108,7 +108,7 @@ export default function Calculator() {
         <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Income</h5>
-            <h6 class="text-gray-500">monthly</h6>
+            <p class="text-gray-500">monthly</p>
           </div>
           <div>
             <input
@@ -125,7 +125,7 @@ export default function Calculator() {
         <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Hours</h5>
-            <h6 class="text-gray-500">of work, monthly</h6>
+            <p class="text-gray-500">of work, monthly</p>
           </div>
           <div>
             <input
@@ -142,7 +142,7 @@ export default function Calculator() {
         <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
           <div>
             <h5 class="text-xl">Expenses</h5>
-            <h6 class="text-gray-500">monthly</h6>
+            <p class="text-gray-500">monthly</p>
           </div>
           <div>
             <input
@@ -233,7 +233,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Cost of Living:</h5>
-            <h6 class="text-gray-500">per month</h6>
+            <p class="text-gray-500">per month</p>
           </div>
           <div>
        
@@ -247,7 +247,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Cost of Living:</h5>
-            <h6 class="text-gray-500">per day</h6>
+            <p class="text-gray-500">per day</p>
           </div>
           <div>
           
@@ -260,7 +260,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Cost of Living:</h5>
-            <h6 class="text-gray-500">per hour</h6>
+            <p class="text-gray-500">per hour</p>
           </div>
           <div>
            
@@ -273,7 +273,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Cash Remaining:</h5>
-            <h6 class="text-gray-500">savings</h6>
+            <p class="text-gray-500">savings</p>
           </div>
           <div>
           
@@ -286,7 +286,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Time Surplus:</h5>
-            <h6 class="text-gray-500">hours</h6>
+            <p class="text-gray-500">hours</p>
           </div>
           <div>
             
@@ -299,7 +299,7 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Saving Ratio:</h5>
-            <h6 class="text-gray-500">percentage saved</h6>
+            <p class="text-gray-500">percentage saved</p>
           </div>
           <div>
            
@@ -312,9 +312,9 @@ export default function Calculator() {
         <div class="grid grid-cols-2 mt-3 gap-10">
           <div>
             <h5 class="text-xl">Burn Rate:</h5>
-            <h6 class="text-gray-500">
+            <p class="text-gray-500">
               number of days you can live off the money saved
-            </h6>
+            </p>
           </div>
           <div>
            

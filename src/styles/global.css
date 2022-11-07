@@ -12,9 +12,18 @@ h1, h2, h3, h4, h5 {
     font-family: 'Soyuz Grotesk';
 }
 
+p, button {
+    font-family: 'HK Grotesk';
+}
+
 @font-face {
     font-family: 'Soyuz Grotesk';
     src: url('../assets/SoyuzGroteskBold.woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../assets/HKGrotesk-Regular.otf');
 }
 
 @layer components {
