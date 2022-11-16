@@ -32,10 +32,20 @@ import Footer from "../components/Footer.astro";
     <meta property="og:description" content={Astro.props.ogDesc} />
     <meta property="og:image" content={Astro.props.ogImage} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content={`https://burnrate.io/${Astro.props.ogUrl}`} />
+    <meta property="og:url" content={`https://burnrate.netlify.app/${Astro.props.ogUrl}`} />
+
+       {/*Twitter  */}
+       <meta property="twitter:card" content="summary_large_image" />
+       <meta property="twitter:title" content={Astro.props.ogTitle} />
+       <meta property="twitter:description" content={Astro.props.ogDesc} />
+       <meta property="twitter:image" content={Astro.props.ogImage} />
+       <meta
+           property="twitter:url"
+           content={`https://burnrate.netlify.app/${Astro.props.ogUrl}`}
+       />
     <link
       rel="canonical"
-      href={`https://burnrate.io/${Astro.props.canonical}`}
+      href={`https://burnrate.netlify.app/${Astro.props.ogUrl}`}
     />
     <meta property="og:type" content="website"/>
   </head>
