@@ -4,12 +4,12 @@ slug: what-is-personal-burn-rate
 lead: A brief intro into strategizing and leveraging personal finance
 author: 0xShapeShifter
 date: 2022-10-15
-cover: src/assets/understand.svg
+cover: /understand.svg
 ogUrl: what-is-personal-burn-rate
 canonial: what-is-personal-burn-rate
 ---
 
-![Understand BurnRate](src/assets/understand.svg)
+![Understand BurnRate](/understand.svg)
 
 Personal financial efficiency has been a hot topic for years. People subscribe to dozens of newsletters that are expected to help them become more financially free. Myriads of apps are built with the sole purpose of tracking income vs expenses and (hopefully) changing one's financial routine.
 
@@ -26,7 +26,7 @@ So how does one can apply this concept to personal finance? Think of your income
 
 Second, think about how much you spend daily, in other words, what is your daily cost of living? $4,000 / 30 = $133,33. In this case, if something happens, and you loose your source of income, you could live for 45 days with the money you have left ($6,000 / $133.33 = 45). This is your burn rate.
 
-![Understand BurnRate](src/assets/keepgoing.svg)
+![Understand BurnRate](/keepgoing.svg)
 
 45 days. Will one be able to find a job? Or is there a chance to launch a profitable business in 45 days? Maybe one should think about starting a small company right now? Knowing this number might help one gain a fresh perspective on how to approach not only their finance, but also personal life and self-realization.
 
