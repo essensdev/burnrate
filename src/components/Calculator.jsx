@@ -304,7 +304,7 @@ export default function Calculator() {
           <div>
            
           <p class="text-end text-xl">
-                ${savings}
+                {savings} %
               </p>
           
           </div>
