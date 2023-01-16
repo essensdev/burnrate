@@ -8,10 +8,10 @@ module.exports = {
 				light: '#f6f6f6',
 				gray: '#666'
 			},
-			fontFamily: {
-				'soyuz-grotesk': ['SoyuzGroteskBold', 'sans'],
-				'hk-grotesk': ['HKGrotesk-Regular', 'sans-serif'],
-			},
+			// fontFamily: {
+			// 	'Soyuz-Grotesk': ['SoyuzGroteskBold', 'sans'],
+			// 	'HK-Grotesk': ['HKGrotesk-Regular', 'sans-serif'],
+			// },
 		},
 	},
 	plugins: [],

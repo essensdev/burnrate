@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Soyuz-Grotesk';
+    src: url('/fonts/SoyuzGroteskBold.woff');
+}
+
+@font-face {
+    font-family: 'HK-Grotesk';
+    src: url('fonts/fonts/HKGrotesk-Regular.otf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Soyuz-Grotesk';
+}
+
+p,
+button {
+    font-family: Helvetica, sans-serif;
+}
+
+
 @layer base {
 
     body {
@@ -24,15 +49,7 @@
     }
 }
 
-@font-face {
-    font-family: 'Soyuz Grotesk';
-    src: url('/fonts/SoyuzGroteskBold.woff');
-}
 
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('fonts/fonts/HKGrotesk-Regular.otf');
-}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -44,19 +61,6 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Soyuz Grotesk';
-}
-
-p,
-button {
-    font-family: 'HK Grotesk';
 }
 
 
