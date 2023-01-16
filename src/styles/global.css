@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    input {
+        @apply bg-transparent border-b text-white block valid:text-white invalid:text-red-400 w-full h-fit py-1 my-2 focus:outline-none
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     background-color: #111111;
     color: white;
@@ -25,6 +43,7 @@ p, button {
     font-family: 'HK Grotesk';
     src: url('../assets/HKGrotesk-Regular.otf');
 }
+
 
 @layer components {
     .markdown > p {
