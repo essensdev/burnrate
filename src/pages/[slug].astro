@@ -25,8 +25,8 @@ const { Content, frontmatter } = Astro.props.post;
   ogUrl={frontmatter.ogUrl}
   canonical={frontmatter.canonical}
 >
-  <h1 class="text-8xl mt-10">{frontmatter.title}</h1>
-  <p class="text-3xl mt-5 text-gray-600">{frontmatter.lead}</p>
+  <h1 class="text-6xl mt-20">{frontmatter.title}</h1>
+  <p class="text-xl mt-5 text-gray">{frontmatter.lead}</p>
   <a href="/" rel="noreferrer noopener">
     <button class="border p-2 rounded-none mt-10">Back</button>
   </a>

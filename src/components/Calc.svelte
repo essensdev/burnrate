@@ -33,10 +33,10 @@
 
 <div class="grid md:grid-cols-2 gap-20 my-20">
   <form id="expenses-form">
-    <div class="grid md:grid-cols-2 mt-10 md:mt-5 gap-5 md:gap-10">
+    <div class="grid md:grid-cols-2 gap-2 md:gap-10">
       <label for="income">
         <h5 class="text-xl">Income</h5>
-        <p class="text-gray-500">monthly</p></label
+        <p class="detail">monthly</p></label
       >
 
       <input
@@ -51,10 +51,10 @@
       <p id="incomeHint" class="text-red hidden">only numbers</p>
     </div>
 
-    <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
+    <div class="grid md:grid-cols-2 mt-10 gap-2 md:gap-10">
       <label for="hours">
         <h5 class="text-xl">Hours</h5>
-        <p class="text-gray-500">of work, monthly</p>
+        <p class="detail">of work, monthly</p>
       </label>
       <input
         name="hours"
@@ -66,10 +66,10 @@
       />
     </div>
 
-    <div class="grid md:grid-cols-2 mt-20 md:mt-5 gap-5 md:gap-10">
+    <div class="grid md:grid-cols-2 mt-10 gap-2 md:gap-10">
       <label for="expenses">
         <h5 class="text-xl">Expenses</h5>
-        <p class="text-gray-500">monthly</p>
+        <p class="detail">monthly</p>
       </label>
       <div>
         <input
@@ -147,10 +147,10 @@
   </form>
 
   <div>
-    <div class="grid grid-cols-2 mt-3 gap-10">
+    <div class="grid grid-cols-2 mt-10 md:mt-0 gap-10">
       <div>
         <h5 class="text-xl">Cost of Living:</h5>
-        <p class="text-gray-500">per month</p>
+        <p class="detail">per month</p>
       </div>
       <div>
         <p class="text-end text-xl">${expenses}</p>
@@ -159,7 +159,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Cost of Living:</h5>
-        <p class="text-gray-500">per day</p>
+        <p class="detail">per day</p>
       </div>
       <div>
         <p class="text-end text-xl">${day}</p>
@@ -168,7 +168,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Cost of Living:</h5>
-        <p class="text-gray-500">per hour</p>
+        <p class="detail">per hour</p>
       </div>
       <div>
         <p class="text-end text-xl">${hour}</p>
@@ -177,7 +177,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Cash Remaining:</h5>
-        <p class="text-gray-500">savings</p>
+        <p class="detail">savings</p>
       </div>
       <div>
         <p class="text-end text-xl">${remain}</p>
@@ -186,7 +186,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Time Surplus:</h5>
-        <p class="text-gray-500">hours</p>
+        <p class="detail">hours</p>
       </div>
       <div>
         <p class="text-end text-xl">{time}</p>
@@ -195,7 +195,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Saving Ratio:</h5>
-        <p class="text-gray-500">percentage saved</p>
+        <p class="detail">percentage saved</p>
       </div>
       <div>
         <p class="text-end text-xl">{savings}%</p>
@@ -204,7 +204,7 @@
     <div class="grid grid-cols-2 mt-3 gap-10">
       <div>
         <h5 class="text-xl">Burn Rate:</h5>
-        <p class="text-gray-500">
+        <p class="detail">
           number of days you can live off the money saved
         </p>
       </div>

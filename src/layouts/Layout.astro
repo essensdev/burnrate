@@ -10,6 +10,7 @@ const {
   canonical = "BurnRate.io",
 } = Astro.props;
 import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <!DOCTYPE html>
@@ -49,7 +50,8 @@ import Footer from "../components/Footer.astro";
     />
     <meta property="og:type" content="website"/>
   </head>
-  <body class="m-auto p-5 max-w-6xl justify-center">
+  <body class="flex justify-between flex-col h-screen mx-auto max-w-6xl">
+    <Nav />
     <main>
       <slot />
     </main>

@@ -3,55 +3,72 @@
 @tailwind utilities;
 
 @layer base {
+
+    body {
+        @apply bg-dark text-light px-5 md:px-0
+    }
+
     input {
         @apply bg-transparent border-b text-white block valid:text-white invalid:text-red-400 w-full h-fit py-1 my-2 focus:outline-none
     }
+
+    button {
+        @apply border px-2 py-1 rounded-none justify-end hover:bg-light hover:text-dark
+    }
+
+}
+
+@layer components {
+    .detail {
+        @apply text-gray
+    }
+}
+
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url('/fonts/SoyuzGroteskBold.woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('fonts/fonts/HKGrotesk-Regular.otf');
 }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
-body {
-    background-color: #111111;
-    color: white;
-    font-family: Helvetica, sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Soyuz Grotesk';
 }
 
-p, button {
+p,
+button {
     font-family: 'HK Grotesk';
 }
 
-@font-face {
-    font-family: 'Soyuz Grotesk';
-    src: url('../assets/SoyuzGroteskBold.woff');
-}
 
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('../assets/HKGrotesk-Regular.otf');
-}
 
 
 @layer components {
     .markdown > p {
-        @apply mt-5 pb-5 text-[1.3rem]
+        @apply mt-5 pb-5 text-[1.1rem]
     }
 
     .markdown > h1 {
-        @apply text-6xl mb-5 mt-10
+        @apply text-5xl mb-5 mt-20 
     }
 
     .markdown > h2 {
@@ -63,7 +80,7 @@ p, button {
     }
 
     .markdown > h4 {
-        @apply text-gray-700 text-xl mb-10
+        @apply text-gray text-xl mb-10
     }
 
     .markdown > img {
@@ -71,9 +88,9 @@ p, button {
     }
 
     .markdown > blockquote {
-        @apply mb-10 mt-7 border p-10 text-[1.3rem]
+        @apply mb-10 mt-7 border p-10 text-[1.1rem]
     }
 
-  
+
 
 }

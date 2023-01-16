@@ -1,7 +1,8 @@
 ---
-import Calc from "../components/Calc.svelte"
+import Calc from "../components/Calc.svelte";
 import Layout from "../layouts/Layout.astro";
 import Blog from "../components/Blog.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout
@@ -13,48 +14,7 @@ import Blog from "../components/Blog.astro";
   ogUrl="index.svg"
   canonical=""
 >
-  <header>
-    <div class="flex justify-between mb-20">
-      <div>
-        <h1 class="text-9xl">Burn Rate</h1>
-        <p class="text-gray-500 cursor-pointer">
-          by <a
-            class="hover:underline"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://0xshapeshifter.vercel.app/">ShapeShifter</a
-          >
-        </p>
-      </div>
-
-      <div>
-        <a
-          class="text-right mt-3"
-          href="https://nowpayments.io/donation/burnrate"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <button class="border p-2 rounded-none justify-end">Donate</button></a
-        >
-      </div>
-    </div>
-
-    <div>
-      <p class="my-1">
-        BurnRate helps you gain an instant bird-eye perspective of your expenses
-        and strategically evaluate your income.
-      </p>
-      <p class="my-1"></p>
-      <p class="my-1">
-        If this app helped you in some way, consider supporting the creator <a
-          class="underline"
-          target="_blank"
-          rel="noreferrer noopener"
-          href="https://nowpayments.io/donation/burnrate">here</a
-        >.
-      </p>
-    </div>
-  </header>
- <Calc client:load />
+  <Header />
+  <Calc client:load />
   <Blog />
 </Layout>
