@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^2.0.2",
     "astro": "^1.4.7",
     "astro-compress": "^1.0.12",
-    "preact": "^10.11.3",
+    "preact": "^10.13.2",
     "svelte": "^3.55.1",
     "tailwindcss": "^3.1.8"
   }
